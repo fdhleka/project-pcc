@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".halamanKategoriIslam">
+
+    <!-- Header with Search Button -->
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_dashboard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Search Button -->
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Cari Makam Untuk Mayatmu?"
+            android:background="@drawable/backgorund_edittext"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!-- ScrollView containing LinearLayout for scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First Image View and Texts -->
+
+            <ImageView
+                android:id="@+id/imageviewislam"
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trangkilband"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makam Islam (Trangkil Bandung)"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="83MH+MJW, Jl. Dahlia, Trangkil Bandung, Trangkil,"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"/>
+
+            <Button
+                android:id="@+id/makam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_backgorund"
+                android:text="selengkapnya"
+                android:layout_marginLeft="30dp"/>
+
+            <!-- Second Image View and Texts -->
+            <ImageView
+                android:id="@+id/imageviewislam1"
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bantengan"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makam Bantengan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="83MH+MJW, Jl. Dahlia, Trangkil Bandung, Trangkil"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"/>
+
+            <Button
+                android:id="@+id/makam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_backgorund"
+                android:text="selengkapnya"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:id="@+id/imageviewislam2"
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/asempapan"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makam Asempapan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="83JXGG, Asempapan, Kec.Trangkkil, Kabupaten Pati"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"/>
+
+            <Button
+                android:id="@+id/makam3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_backgorund"
+                android:text="selengkapnya"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:id="@+id/imageviewislam3"
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/karangtwg"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makam Karangtawang"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9358+JP, Pohbango, Mojoagung, Kec Trangkil, Kabupaten Pati"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"/>
+
+            <Button
+                android:id="@+id/makam4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_backgorund"
+                android:text="selengkapnya"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

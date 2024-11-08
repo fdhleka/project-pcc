@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Halamanutama">
+
+    <!-- Header with Image and Search Button -->
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_dashboard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Header Image -->
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logograndfinder" />
+
+        <!-- Search Button -->
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Admin"
+            android:textColor="@color/black"
+            android:background="@drawable/backgorund_edittext"
+            android:gravity="center"
+            android:layout_below="@id/headerImage"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <!-- Card 1 (Top Left) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintTop_toBottomOf="@id/topview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/card2"
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imagebuttonislamadmin"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logoislamremovebg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Islam"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 2 (Top Right) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp"
+        android:backgroundTint="@color/brown"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/topview"
+        app:layout_constraintStart_toEndOf="@+id/card1"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imagebuttonkristenadmin"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logokristenremovebg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Kristen"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card 3 (Bottom Center) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintTop_toBottomOf="@+id/card1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imagebuttonpanduanadmin"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logopanduanremovebg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Panduan"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_add_24"
+        android:contentDescription="Add"
+        app:backgroundTint="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

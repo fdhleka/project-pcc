@@ -1,0 +1,152 @@
+<!-- res/layout/activity_panduan_pemakaman.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/brown"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Panduan Pemakaman"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Content Scrollable -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Deskripsi -->
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pemakaman adalah salah satu proses penting dalam menghormati dan mengenang seseorang yang telah meninggal dunia..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:paddingBottom="16dp" />
+
+            <!-- Subsection: Proses Pemakaman -->
+            <TextView
+                android:id="@+id/prosesPemakamanTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Proses Pemakaman"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/prosesPemakamanContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Persiapan...\n• Pembentukan surat kematian kepada pihak berwenang.\n• Pengurusan surat kematian di kantor catatan sipil..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:paddingBottom="16dp" />
+
+            <!-- Subsection: Hak dan Kewajiban -->
+            <TextView
+                android:id="@+id/hakKewajibanTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Hak dan Kewajiban"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/hakKewajibanContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Hak Keluarga...\n• Mendapatkan informasi tentang prosedur dan biaya.\n• Mengurus administrasi dan dokumen..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:paddingBottom="16dp" />
+
+            <!-- Subsection: Persyaratan Administrasi -->
+            <TextView
+                android:id="@+id/persyaratanAdministrasiTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Persyaratan Administrasi"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/persyaratanAdministrasiContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Dokumen diperlukan:\n• Surat kematian...\n• KTP almarhum dan keluarga..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:paddingBottom="16dp" />
+
+            <!-- Subsection: Kesimpulan -->
+            <TextView
+                android:id="@+id/kesimpulanTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesimpulan"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/kesimpulanContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proses pemakaman adalah langkah terakhir yang penting dalam menghormati orang yang telah meninggal dunia..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:paddingBottom="16dp" />
+
+            <!-- Gambar -->
+            <ImageView
+                android:id="@+id/illustrationImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kuburan"
+                android:contentDescription="Illustration of burial process"
+                android:scaleType="center"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

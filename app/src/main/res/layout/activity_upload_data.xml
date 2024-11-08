@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".upload_data">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="@drawable/border_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="upload data"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/uploadimage"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/upload"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Makam"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <!-- Original input fields -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/namamakam"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:hint="Nama Makam"
+                android:gravity="start|center_vertical"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/alamatmakam"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Alamat Makam"
+                android:gravity="start|center_vertical"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/notelpmakam"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Telp Makam"
+                android:gravity="start|center_vertical"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/sisamakam"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Sisa Makam"
+                android:gravity="start|center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rincian Biaya"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+            <!-- Additional input fields -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/biayapenguburan"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Biaya Penguburan"
+                android:gravity="start|center_vertical"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/kremasisederhana"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Biaya Kremasi Sederhana"
+                android:gravity="start|center_vertical"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/kremasilengkap"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Biaya Kremasi Lengkap"
+                android:gravity="start|center_vertical"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toko Perlengkapan Makam Terdekat"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/toko"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Alamat Toko Perlengkapan Terdekat"
+                android:gravity="start|center_vertical"/>
+
+            <!-- Four more fields to reach 12 -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/alamattoko"
+                android:background="@drawable/border_bg"
+                android:layout_marginTop="7dp"
+                android:padding="16dp"
+                android:hint="Alamat toko"
+                android:gravity="start|center_vertical"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Buat"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border_bg"
+                android:backgroundTint="@color/brown"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

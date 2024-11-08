@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EAD8D2"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semua Ulasan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#5B403B" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tulis Kesan Terbaikmu"
+            android:textSize="16sp"
+            android:textColor="#8C6858"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Reviews Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/addReviewButton"
+        android:padding="16dp"
+        android:background="#FAF5F3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Review Item Template -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@drawable/rivew_background"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- User Name -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="User Name"
+                        android:textSize="16sp"
+                        android:textColor="#5B403B"
+                        android:textStyle="bold" />
+
+                    <!-- Rating -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="★ 5"
+                        android:textSize="16sp"
+                        android:textColor="#8C6858" />
+                </LinearLayout>
+
+                <!-- Review Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is the user's review text."
+                    android:textSize="14sp"
+                    android:textColor="#5B403B"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Repeat the Review Item for each review -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Add Review Button -->
+    <Button
+        android:id="@+id/addReviewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Tambah Ulasan"
+        android:backgroundTint="#EAD8D2"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:padding="12dp" />
+
+</RelativeLayout>
